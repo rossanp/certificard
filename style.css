@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+   background: linear-gradient(236.85deg, #007200 27.26%, #16ce2c 96.03%);
+   padding: 49px 90px;
+   font-family: "Roboto", sans-serif;
+   color: #1c1c1c;
+}
+
+.container {
+   background: #f7f7f7;
+   box-shadow: 6px 6px 6px #0e1d2f;
+   border-radius: 20px;
+   padding: 64px;
+}
+
+.cabecalho {
+   display: flex;
+   justify-content: space-between;
+}
+
+header {
+   display: flex;
+   align-items: space-between;
+}
+
+.img-perfil {
+   width: 158px;
+   height: 160px;
+   border-radius: 460px;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.perfil {
+   display: flex;
+}
+
+.titulo {
+   margin: 0 10px;
+}
+
+.titulo h1 {
+   font-size: 36px;
+   line-height: 42px;
+   font-weight: 700;
+}
+
+.titulo h3 {
+   font-size: 24px;
+   line-height: 28px;
+   font-weight: 400;
+}
+
+.titulo img {
+   width: 45px;
+}
+
+.tema button {
+   color: #0e1d2f;
+   background: #ecf4ff;
+   border-radius: 100px;
+   font-size: 24px;
+   border: 2px solid #0e1d2f;
+   align-self: flex-end;
+}
+
+.projetos {
+   display: flex;
+   flex-direction: column;
+   background: linear-gradient(230.65deg, #16ce2c 27.49%, #007200 83.19%);
+   margin-top: 65px;
+   border-radius: 20px;
+   padding: 105px 0;
+}
+
+.projetos ul {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-weight: 700;
+   font-size: 48px;
+   line-height: 56px;
+   margin-top: 0;
+}
+
+.projetos li {
+   margin: 0 35px;
+}
+
+.projetos li,
+.projetos a {
+   font-weight: 400;
+   font-size: 36px;
+   line-height: 42px;
+   text-decoration: none;
+   list-style: none;
+   line-height: 50px;
+   margin-top: 25px;
+}
+
+/* unvisited link */
+a:link {
+   color: #1c1c1c;
+}
+
+/* visited link */
+a:visited {
+   color: silver;
+}
+
+/* mouse over link */
+a:hover {
+   color: red;
+}
+
+/* selected link */
+a:active {
+   color: blue;
+}
+
+.underline {
+   position: relative;
+}
+
+.underline::before {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   width: 0;
+   height: 2px;
+   background-color: purple;
+   transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.dark {
+   background: linear-gradient(230.65deg, #00a000 27.49%, #0bb200 83.19%);
+}
+
+.dark .container {
+   background: #333439;
+   color: #f6f6f6;
+}
+
+.dark .tema button {
+   color: #ffffff;
+   background: #1c1c1c;
+   border: 2px solid #f7f7f7;
+}
+
+.dark .projetos {
+   color: #333439;
+}
+
+@media (hover: hover) and (pointer: fine) {
+   .underline:hover::before {
+      left: 0;
+      right: auto;
+      width: 100%;
+   }
+}
